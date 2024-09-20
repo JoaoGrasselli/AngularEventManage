@@ -1,0 +1,10 @@
+<div class="event-list-screen">
+    <app-event-filter 
+      (onFilterChange)="applyFilter($any($event))">
+    </app-event-filter>
+    
+    <app-event-list 
+      [events]="filteredEvents" 
+      (onEventSelect)="handleEventSelect($any($event))">
+    </app-event-list>
+</div>

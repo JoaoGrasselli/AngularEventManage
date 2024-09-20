@@ -1,0 +1,25 @@
+<div class="event-filter">
+    <h3>Filtrar Eventos</h3>
+    <div>
+      <label for="startDate">Data Inicial:</label>
+      <input id="startDate" [(ngModel)]="startDate" type="date" />
+    </div>
+    
+    <div>
+      <label for="endDate">Data Final:</label>
+      <input id="endDate" [(ngModel)]="endDate" type="date" />
+    </div>
+    
+    <div>
+      <label for="category">Categoria:</label>
+      <select id="category" [(ngModel)]="category">
+        <option value=""></option>
+        <option value="Festa">Festa</option>
+        <option value="Teatro">Teatro</option>
+        <option value="Show">Show</option>
+        <option value="Esporte">Esporte</option>
+      </select>
+    </div>
+    
+    <button (click)="applyFilter()">Aplicar Filtro</button>
+</div>

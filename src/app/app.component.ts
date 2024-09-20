@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { EventListScreenComponent } from './event-list-screen/event-list-screen.component';
+import { EventCreationComponent } from './event-creation/event-creation.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterModule, RouterOutlet, EventListScreenComponent, EventCreationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

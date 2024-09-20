@@ -1,0 +1,17 @@
+<div class="event-list">
+    <h2>Lista de Eventos</h2>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Data</th>
+        <th>Categoria</th>
+      </tr>
+      <tr *ngFor="let event of events" (click)="selectEvent(event)">
+        <td>{{ event.name }}</td>
+        <td>{{ event.description }}</td>
+        <td>{{ event.date | date }}</td>
+        <td>{{ event.category }}</td>
+      </tr>
+    </table>
+</div>

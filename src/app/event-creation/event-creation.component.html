@@ -1,0 +1,10 @@
+<div class="event-creation">
+    <app-event-form 
+      [eventData]="selectedEvent" 
+      (onFormChange)="handleFormChange($any($event))">
+    </app-event-form>
+    
+    <app-event-preview 
+      [previewData]="currentFormData">
+    </app-event-preview>
+</div>
